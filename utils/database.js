@@ -1,7 +1,7 @@
 import { MongoClient, ObjectId } from "mongodb";
 
 const dbName = "db-name";
-const url = `mongodb+srv://mpendulo:1Z4tYLNu5Bo4jW7e@cluster0.bhv2lkm.mongodb.net/?retryWrites=true&w=majority`;
+const url = process.env.NEXT_PUBLIC_MONGODB;
 
 const client = new MongoClient(url, {
   useNewUrlParser: true,
